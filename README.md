@@ -1,6 +1,6 @@
 
 # EPOFusion
-This is official Pytorch implementation of "[EPOFusion: Exposure-aware Progressive Optimization Method for Infrared and Visible Image Fusion](https://arxiv.org/abs/2603.16130)"
+This is official Pytorch implementation of "[Exposure-aware Progressive Infrared-Visible Fusion for RobustAutonomous Driving Perception]()"
  - 
 
 ## 📌 Key Features
@@ -79,10 +79,7 @@ python train_model.py
 ## If this work is helpful to you, please cite it as：
 ```
 @inproceedings{Wang2026EPOFusionEA,
-  title={EPOFusion: Exposure aware Progressive Optimization Method for Infrared and Visible Image Fusion},
-  author={Zhiwei Wang and Yayu Zheng and Defeng He and Li Zhao and Xiaoqin Zhang and Yuxing Li and Edmund Y. Lam},
-  year={2026},
-  url={https://api.semanticscholar.org/CorpusID:286579921}
+
 }
 ```
 ## Acknowledgements
