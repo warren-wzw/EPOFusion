@@ -78,7 +78,7 @@ python train_model.py
 ![image](./assets/Objects.png)
 ## If this work is helpful to you, please cite it as：
 ```
-@inproceedings{Wang2026EPOFusionEA,
+@inproceedings{
 
 }
 ```
