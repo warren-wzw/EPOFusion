@@ -1,6 +1,6 @@
 
 # EPOFusion
-This is official Pytorch implementation of "[Exposure-aware Progressive Infrared-Visible Fusion for RobustAutonomous Driving Perception]()"
+This is official Pytorch implementation of "[Exposure-aware Progressive Optimization Method for Infrared and Visible Image Fusion]()"
  - 
 
 ## 📌 Key Features
