@@ -3,21 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exposure-aware Progressive Optimization Method for Infrared and Visible Image Fusion">
+  <meta name="description" content="EPOFusion: Exposure-aware Progressive Optimization for Infrared and Visible Image Fusion, with IVOE — an infrared–visible over-exposure benchmark.">
   <title>EPOFusion</title>
-  <link rel="stylesheet" href="assets/style.css?v=20260808-2">
+  <link rel="stylesheet" href="assets/style.css?v=20260822">
 </head>
 <body>
 <main>
   <section class="hero section">
     <div class="container narrow">
-      <h1><span class="title-line">Exposure-aware Progressive Optimization Method for</span><span class="title-line">Infrared and Visible Image Fusion</span></h1>
-      <p class="venue">Zhiwei Wang<sup>1,2</sup></p>
-      <p class="venue affiliations"><span><sup>1</sup> College of Information Engineering, Zhejiang University of Technology</span><span><sup>2</sup> Department of Electrical and Computer Engineering, The University of Hong Kong</span></p>
+      <h1><span class="title-line">Exposure-aware Progressive Optimization</span><span class="title-line">for Infrared and Visible Image Fusion</span></h1>
+      <p class="venue">Zhiwei Wang<sup>1,2</sup> &middot; Defeng He<sup>1</sup> &middot; Li Zhao<sup>3</sup> &middot; Xiaoqin Zhang<sup>1</sup> &middot; Yuxing Li<sup>2</sup> &middot; Edmund Y. Lam<sup>2</sup></p>
+      <div class="venue affiliations">
+      <div class="affiliations stacked">
+        <div class="affiliation-row">
+          <span>
+            <sup>1</sup> College of Information Engineering, Zhejiang University of Technology
+          </span>
+          <img src="assets/zjut.jpg" class="affiliation-logo" alt="Zhejiang University of Technology">
+        </div>
 
+        <div class="affiliation-row">
+          <span>
+            <sup>2</sup> Department of Electrical and Computer Engineering, The University of Hong Kong
+          </span>
+          <img src="assets/hku.jpg" class="affiliation-logo" alt="The University of Hong Kong">
+        </div>
+
+        <div class="affiliation-row">
+          <span>
+            <sup>3</sup> College of Information Science and Technology, Zhejiang Shuren University
+          </span>
+          <img src="assets/Shuren.png" class="affiliation-logo" alt="Zhejiang Shuren University">
+        </div>
+      </div>
       <div class="buttons">
-        <a class="button primary" href="https://arxiv.org/abs/2603.16130">
-          <img class="button-icon" src="https://cdn.simpleicons.org/arxiv/ffffff" alt="" aria-hidden="true">
+        <a class="button" href="#">
+          <img class="button-icon" src="https://cdn.simpleicons.org/arxiv/181717" alt="" aria-hidden="true">
           Paper
         </a>
         <a class="button"
@@ -27,39 +48,93 @@
           <img class="button-icon" src="https://cdn.simpleicons.org/github/181717" alt="" aria-hidden="true">
           Code
         </a>
-        <a class="button" href="#">🗂 Dataset</a>
+        <a class="button primary" href="#ivoe">🗂 IVOE</a>
       </div>
     </div>
   </section>
-
   <section class="section compact">
-    <div class="container gif-grid">
-      <img class="main-figure" src="assets/infogap_354.gif" alt="Teaser GIF 1">
-      <img class="main-figure" src="assets/infogap_389.gif" alt="Teaser GIF 2">
-    </div>
-  </section>
-
-  <section class="section">
     <div class="container">
-      <h2>Generalization Performance</h2>
-      <img class="main-figure" src="assets/Generalize.png" alt="Generalization performance">
+      <figure class="figure">
+        <img class="main-figure" src="assets/figs/ModelArch.jpg" alt="EPOFusion architecture: exposure-aware guidance, iterative decoding fusion, and multi-scale context fusion">
+        <figcaption class="caption"><b>EPOFusion.</b> An exposure-aware guidance module localizes over-exposed
+          visible regions, an iterative decoding fusion module refines the result progressively, and multi-scale
+          context fusion preserves fine detail — trained with an adaptive loss balancing intensity and texture.</figcaption>
+      </figure>
     </div>
   </section>
+  <section class="section spotlight" id="ivoe">
+    <div class="container">
+      <span class="eyebrow">The dataset</span>
+      <img class="ivoe-logo" src="assets/figs/ivoe_logo.jpg" alt="IVOE">
+      <h2>An Infrared–Visible Over-Exposure benchmark</h2>
 
-  <section class="section">
+      <div class="loop-row">
+        <figure class="loop">
+          <video src="assets/ivoe/ivoe_flir05511.mp4" poster="assets/ivoe/ivoe_flir05511_poster.jpg"
+                 autoplay loop muted playsinline></video>
+          <figcaption>FLIR_05511</figcaption>
+        </figure>
+        <figure class="loop">
+          <video src="assets/ivoe/ivoe_flir03901.mp4" poster="assets/ivoe/ivoe_flir03901_poster.jpg"
+                 autoplay loop muted playsinline></video>
+          <figcaption>FLIR_03901</figcaption>
+        </figure>
+        <figure class="loop">
+          <video src="assets/ivoe/ivoe_flir09399.mp4" poster="assets/ivoe/ivoe_flir09399_poster.jpg"
+                 autoplay loop muted playsinline></video>
+          <figcaption>FLIR_09399</figcaption>
+        </figure>
+      </div>
+      <p class="caption">Each loop runs consecutive frames as four panels — <b>visible</b>, <b>infrared</b>,
+        <b>detection GT</b>, <b>segmentation GT</b>. The annotations sit on targets the visible image has lost to
+        saturation while the co-registered infrared still resolves them.</p>
+
+      <div class="stat-grid" style="margin-top:34px">
+        <div class="stat"><span class="num">447</span><span class="lbl">real over-exposed pairs</span></div>
+        <div class="stat"><span class="num">3,722</span><span class="lbl">detection boxes, 3 classes</span></div>
+        <div class="stat"><span class="num">51.7%</span><span class="lbl">frames with a severely blown-out target</span></div>
+        <div class="stat"><span class="num">74.1%</span><span class="lbl">boxes where IR carries more detail than RGB</span></div>
+      </div>
+
+      <div class="pill-row" style="margin:26px 0 0">
+        <span class="pill">person <b>1,993</b></span>
+        <span class="pill">bicycle <b>186</b></span>
+        <span class="pill">car <b>1,640</b></span>
+        <span class="pill">masks <b>447</b> · 3 classes + background</span>
+        <span class="pill">split <b>357 / 90</b></span>
+      </div>
+
+      <div class="dl-row">
+        <a class="button primary" href="#">🗂 Download IVOE</a>
+        <a class="button" href="https://github.com/warren-wzw/EPOFusion" target="_blank" rel="noopener noreferrer">
+          <img class="button-icon" src="https://cdn.simpleicons.org/github/181717" alt="" aria-hidden="true">
+          Toolkit
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="section tinted">
     <div class="container narrow">
       <h2>Citation</h2>
       <div class="code-box">
-        <pre id="bibtex">
-          <code>@article{wang2026epofusion,
-                title={EPOFusion: Exposure aware Progressive Optimization Method for Infrared and Visible Image Fusion},
-                author={Wang, Zhiwei and He, Defeng and Zhao, Li and Zhang, Xiaoqin and Li, Yuxing and Lam, Edmund Y},
-                journal={arXiv preprint arXiv:2603.16130},
-                year={2026}
-              }</code></pre>
+        <button class="copy-button" id="copyBib">Copy</button>
+        <pre id="bibtex"><code>@article{wang2026epofusion,
+  title={EPOFusion: Exposure-aware Progressive Optimization Method
+         for Infrared and Visible Image Fusion},
+  author={Wang, Zhiwei and He, Defeng and Zhao, Li and Zhang, Xiaoqin
+          and Li, Yuxing and Lam, Edmund Y},
+  journal={arXiv preprint arXiv:2603.16130},
+  year={2026}
+}</code></pre>
       </div>
     </div>
   </section>
 </main>
+<footer>
+  <div class="container">
+    EPOFusion &amp; IVOE · Zhejiang University of Technology &amp; The University of Hong Kong
+  </div>
+</footer>
+<script src="assets/main.js?v=20260822"></script>
 </body>
 </html>
