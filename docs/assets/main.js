@@ -9,11 +9,6 @@ document.querySelectorAll(".tab").forEach((button) => {
   });
 });
 
-// Keep the IVOE loops playing (some browsers pause autoplay video off-screen)
-document.querySelectorAll(".loop video").forEach((v) => {
-  v.play().catch(() => {});
-});
-
 // Copy BibTeX
 const copyButton = document.getElementById("copyBib");
 if (copyButton) {

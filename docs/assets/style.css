@@ -64,7 +64,7 @@ h3.left{text-align:left}
 
 /* ---------- IVOE spotlight ---------- */
 .spotlight{background:linear-gradient(180deg,#f7f9fe 0%,#eef3fd 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.ivoe-logo{display:block;width:min(820px,94%);margin:0 auto 22px;border-radius:16px;box-shadow:0 16px 44px rgba(11,15,24,.30)}
+.ivoe-logo{display:block;width:min(1230px,100%);margin:0 auto 24px;border-radius:16px;box-shadow:0 16px 44px rgba(11,15,24,.30)}
 .hook{max-width:760px;margin:0 auto 30px;padding:18px 24px;border-left:3px solid var(--accent);background:rgba(255,255,255,.72);border-radius:0 12px 12px 0;color:var(--text);font-size:1.16rem}
 .hook em{color:var(--accent);font-style:normal;font-weight:700}
 .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 30px}
@@ -77,7 +77,7 @@ h3.left{text-align:left}
 /* ---------- three-across sequence loops ---------- */
 .loop-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0}
 .loop{margin:0}
-.loop video{display:block;width:100%;border:1px solid var(--line);border-radius:14px;background:#0b0f18;box-shadow:var(--shadow)}
+.loop img{display:block;width:100%;border:1px solid var(--line);border-radius:14px;background:#0b0f18;box-shadow:var(--shadow)}
 .loop figcaption{margin-top:10px;color:var(--muted);text-align:center;font-size:.9rem;line-height:1.45}
 
 /* ---------- misc ---------- */
