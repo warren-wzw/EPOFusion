@@ -5,7 +5,7 @@ Official project repository for **EPOFusion: Exposure-aware Progressive Optimiza
 
 Zhiwei Wang · Defeng He · Li Zhao · Xiaoqin Zhang · Yuxing Li · Edmund Y. Lam
 
-[Paper](https://arxiv.org/abs/2603.16130) · [IVOE Dataset](https://drive.google.com/file/d/1_uUKZg-8Gtk9aEeBsemgyHI5L4rlhfpv/view?usp=drive_link) · [Checkpoints and Results](https://drive.google.com/drive/folders/1xqN_HHsKdtJNf2SjUSUhvTbi3HRCrBfg?usp=sharing)
+[Paper](https://arxiv.org/abs/2603.16130) · [IVOE Dataset](https://huggingface.co/datasets/Warren-wzw/IVOE) · [Checkpoints and Results](https://drive.google.com/drive/folders/1xqN_HHsKdtJNf2SjUSUhvTbi3HRCrBfg?usp=sharing)
 
 ## Overview
 
@@ -42,13 +42,13 @@ Category distribution:
 
 ![IVOE benchmark](./docs/assets/figs/ivoe_logo.jpg)
 
-Download the dataset from [Google Drive](https://drive.google.com/file/d/1_uUKZg-8Gtk9aEeBsemgyHI5L4rlhfpv/view?usp=drive_link).
+Download the dataset from [Google Drive](https://huggingface.co/datasets/Warren-wzw/IVOE).
 
 ## Resources
 
 | Resource | Download |
 | --- | --- |
-| IVOE dataset | [Google Drive](https://drive.google.com/file/d/1_uUKZg-8Gtk9aEeBsemgyHI5L4rlhfpv/view?usp=drive_link) |
+| IVOE dataset | [Google Drive](https://huggingface.co/datasets/Warren-wzw/IVOE) |
 | EPOFusion checkpoints and results | [Google Drive](https://drive.google.com/drive/folders/1xqN_HHsKdtJNf2SjUSUhvTbi3HRCrBfg?usp=sharing) |
 | MSRS dataset | [Baidu Netdisk](https://pan.baidu.com/s/18q_3IEHKZ48YBy2PzsOtRQ?pwd=MSRS) |
 | FMB dataset | [Google Drive](https://drive.google.com/drive/folders/1T_jVi80tjgyHTQDpn-TjfySyW4CK1LlF) |
