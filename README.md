@@ -91,7 +91,7 @@ python train_model.py
 
 ## Fusion Results
 
-![Fusion comparison](./assets/FusionResults.png)
+![Fusion comparison](./assets/FusionResult.png)
 
 ## Citation
 
