@@ -81,8 +81,6 @@ h3.left{text-align:left}
 .loop figcaption{margin-top:10px;color:var(--muted);text-align:center;font-size:.9rem;line-height:1.45}
 
 /* ---------- misc ---------- */
-.dl-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:26px}
-.dl-row .button{width:auto}
 td.num,th.num{font-variant-numeric:tabular-nums}
 tbody tr.best td{background:#f2f6ff;font-weight:700}
 .table-note{margin:12px auto 0;color:var(--muted);text-align:center;font-size:.9rem}
