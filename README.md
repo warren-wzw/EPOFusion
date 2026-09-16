@@ -20,7 +20,15 @@ The framework combines:
 
 ## Architecture
 
-![EPOFusion architecture](./assets/ModelArch.png)
+![EPOFusion architecture](./assets/figs/ModelArch.png)
+
+## Fusion Results
+
+Visible inputs (top) and EPOFusion results (bottom) across over-exposed scenes.
+
+![Scrolling comparison of visible inputs and EPOFusion results](./assets/ivoe/fusion_comparison.gif)
+
+Full-resolution comparisons: [People](./assets/ivoe/01_people.png) · [Night vehicles](./assets/ivoe/02_night_vehicles.png) · [FLIR road scenes](./assets/ivoe/03_flir_road.png) · [FLIR vehicles](./assets/ivoe/04_flir_vehicles.png).
 
 ## IVOE Benchmark
 
@@ -40,15 +48,15 @@ Category distribution:
 | ---: | ---: | ---: |
 | 1,993 | 186 | 1,640 |
 
-![IVOE benchmark](./docs/assets/figs/ivoe_logo.jpg)
+![IVOE benchmark](./assets/figs/ivoe_logo.jpg)
 
-Download the dataset from [Google Drive](https://huggingface.co/datasets/Warren-wzw/IVOE).
+Download the dataset from [Hugging Face](https://huggingface.co/datasets/Warren-wzw/IVOE).
 
 ## Resources
 
 | Resource | Download |
 | --- | --- |
-| IVOE dataset | [Google Drive](https://huggingface.co/datasets/Warren-wzw/IVOE) |
+| IVOE dataset | [Hugging Face](https://huggingface.co/datasets/Warren-wzw/IVOE) |
 | EPOFusion checkpoints and results | [Google Drive](https://drive.google.com/drive/folders/1xqN_HHsKdtJNf2SjUSUhvTbi3HRCrBfg?usp=sharing) |
 | MSRS dataset | [Baidu Netdisk](https://pan.baidu.com/s/18q_3IEHKZ48YBy2PzsOtRQ?pwd=MSRS) |
 | FMB dataset | [Google Drive](https://drive.google.com/drive/folders/1T_jVi80tjgyHTQDpn-TjfySyW4CK1LlF) |
@@ -88,10 +96,6 @@ Place IVOE under `./datasets/IVOE`, then run:
 ```bash
 python train_model.py
 ```
-
-## Fusion Results
-
-![Fusion comparison](./assets/FusionResult.png)
 
 ## Citation
 
