@@ -3,7 +3,7 @@
 
 Official project repository for **EPOFusion: Exposure-aware Progressive Optimization for Infrared and Visible Image Fusion**.
 
-[Paper](https://arxiv.org/abs/2603.16130) · [IVOE Dataset](https://huggingface.co/datasets/Warren-wzw/IVOE) · [Checkpoints and Results](https://drive.google.com/drive/folders/1xqN_HHsKdtJNf2SjUSUhvTbi3HRCrBfg?usp=sharing)
+[Paper](https://arxiv.org/abs/2603.16130) ·[Project Page](https://warren-wzw.github.io/EPOFusion/) · [IVOE Dataset](https://huggingface.co/datasets/Warren-wzw/IVOE)
 
 ## Overview
 
