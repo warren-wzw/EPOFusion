@@ -90,24 +90,21 @@ tbody tr.best td{background:#f2f6ff;font-weight:700}
 
 /* Static comparison images in a seamless, constant-speed loop. */
 .fusion-results .container{position:relative}
-.fusion-results .subhead{margin-bottom:16px}
-.fusion-pause{width:18px;height:18px;margin:0 7px 20px 0;vertical-align:middle;accent-color:var(--accent)}
-.fusion-pause-label{font-size:.95rem;cursor:pointer}
+.fusion-gallery{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:stretch}
+.fusion-labels{display:flex;flex-direction:column;justify-content:space-around;text-align:center;font-size:12px;color:var(--text)}
 .fusion-viewport{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
 .fusion-viewport:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .fusion-track{display:flex;width:max-content;animation:fusion-scroll 100s linear infinite}
-.fusion-group{display:flex;flex:none;gap:24px;padding-right:24px}
-.fusion-card{flex:none;width:1040px;margin:0;padding:12px;background:#fff}
-.fusion-card img{display:block;width:100%;height:auto}
-.fusion-card figcaption{text-align:center;color:var(--muted);font-size:.95rem;padding:8px 0 2px}
+.fusion-group{display:flex;flex:none;gap:5px;padding-right:5px}
+.fusion-card{position:relative;overflow:hidden;flex:none;width:1020px;aspect-ratio:3264/1016;margin:0;background:#fff}
+/* Clip the embedded labels and outer white margins, preserving the original PNGs. */
+.fusion-card img{position:absolute;display:block;width:103.92156863%;max-width:none;height:auto;left:-3.18627451%;top:-3.93700787%}
 .fusion-viewport:hover .fusion-track,
-.fusion-viewport:focus-within .fusion-track,
-.fusion-pause:checked ~ .fusion-viewport .fusion-track{animation-play-state:paused}
+.fusion-viewport:focus-within .fusion-track{animation-play-state:paused}
 @keyframes fusion-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .fusion-track{animation:none}
   .fusion-viewport{overflow-x:auto}
   .fusion-group[aria-hidden="true"]{display:none}
-  .fusion-pause,.fusion-pause-label,#fusion-help{display:none}
 }

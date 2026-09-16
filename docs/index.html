@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="EPOFusion: Exposure-aware Progressive Optimization for Infrared and Visible Image Fusion, with IVOE — an infrared–visible over-exposure benchmark.">
   <title>EPOFusion</title>
-  <link rel="stylesheet" href="assets/style.css?v=20260916b">
+  <link rel="stylesheet" href="assets/style.css?v=20260916d">
 </head>
 <body>
 <main>
@@ -64,50 +64,41 @@
   <section class="section fusion-results" id="fusion-results" aria-labelledby="fusion-heading">
     <div class="container">
       <h2 id="fusion-heading">Fusion Results</h2>
-      <p class="subhead">Visible inputs (top) and EPOFusion results (bottom) across over-exposed scenes.</p>
-      <input class="fusion-pause" type="checkbox" id="fusion-pause" aria-controls="fusion-viewport">
-      <label class="fusion-pause-label" for="fusion-pause">Pause scrolling</label>
-      <div class="fusion-viewport" id="fusion-viewport" tabindex="0" role="region" aria-label="Fusion comparisons" aria-describedby="fusion-help">
+      <div class="fusion-gallery">
+        <div class="fusion-labels" aria-hidden="true"><span>VI</span><span>Fusion</span></div>
+      <div class="fusion-viewport" id="fusion-viewport" tabindex="0" role="region" aria-label="Fusion comparisons">
         <div class="fusion-track">
           <div class="fusion-group">
             <figure class="fusion-card">
               <img src="assets/ivoe/01_people.png" width="3392" height="1096" alt="Visible and fused images of people in over-exposed scenes" decoding="async">
-              <figcaption>People</figcaption>
             </figure>
             <figure class="fusion-card">
               <img src="assets/ivoe/02_night_vehicles.png" width="3392" height="1096" alt="Visible and fused images of vehicles at night" decoding="async">
-              <figcaption>Night vehicles</figcaption>
             </figure>
             <figure class="fusion-card">
               <img src="assets/ivoe/03_flir_road.png" width="3392" height="1096" alt="Visible and fused images of FLIR road scenes" decoding="async">
-              <figcaption>FLIR road scenes</figcaption>
             </figure>
             <figure class="fusion-card">
               <img src="assets/ivoe/04_flir_vehicles.png" width="3392" height="1096" alt="Visible and fused images of FLIR vehicle scenes" decoding="async">
-              <figcaption>FLIR vehicles</figcaption>
             </figure>
           </div>
           <div class="fusion-group" aria-hidden="true" inert>
             <figure class="fusion-card">
               <img src="assets/ivoe/01_people.png" width="3392" height="1096" alt="" decoding="async">
-              <figcaption>People</figcaption>
             </figure>
             <figure class="fusion-card">
               <img src="assets/ivoe/02_night_vehicles.png" width="3392" height="1096" alt="" decoding="async">
-              <figcaption>Night vehicles</figcaption>
             </figure>
             <figure class="fusion-card">
               <img src="assets/ivoe/03_flir_road.png" width="3392" height="1096" alt="" decoding="async">
-              <figcaption>FLIR road scenes</figcaption>
             </figure>
             <figure class="fusion-card">
               <img src="assets/ivoe/04_flir_vehicles.png" width="3392" height="1096" alt="" decoding="async">
-              <figcaption>FLIR vehicles</figcaption>
             </figure>
           </div>
         </div>
       </div>
-      <p class="caption" id="fusion-help">Hover over the images or select “Pause scrolling” to take a closer look.</p>
+      </div>
     </div>
   </section>
   <section class="section spotlight" id="ivoe">
@@ -166,6 +157,6 @@
     EPOFusion &amp; IVOE · Zhejiang University of Technology &amp; The University of Hong Kong
   </div>
 </footer>
-<script src="assets/main.js?v=20260916b"></script>
+<script src="assets/main.js?v=20260916d"></script>
 </body>
 </html>
