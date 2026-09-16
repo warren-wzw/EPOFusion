@@ -3,20 +3,11 @@
 
 Official project repository for **EPOFusion: Exposure-aware Progressive Optimization for Infrared and Visible Image Fusion**.
 
-Zhiwei Wang · Defeng He · Li Zhao · Xiaoqin Zhang · Yuxing Li · Edmund Y. Lam
-
 [Paper](https://arxiv.org/abs/2603.16130) · [IVOE Dataset](https://huggingface.co/datasets/Warren-wzw/IVOE) · [Checkpoints and Results](https://drive.google.com/drive/folders/1xqN_HHsKdtJNf2SjUSUhvTbi3HRCrBfg?usp=sharing)
 
 ## Overview
 
 EPOFusion is designed for infrared and visible image fusion in scenes where strong illumination saturates the visible image and erases useful structures. It uses complementary infrared information to recover content that is unreliable or missing in over-exposed visible regions.
-
-The framework combines:
-
-- **Exposure-aware guidance** to localize over-exposed visible regions.
-- **Iterative decoding fusion** to refine the fused result progressively.
-- **Multi-scale context fusion** to preserve fine details and scene context.
-- **Adaptive loss balancing** to jointly optimize intensity and texture.
 
 ## Architecture
 
